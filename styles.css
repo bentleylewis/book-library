@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  color: #f2f2f2;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f4eade;
+}
+
+header {
+  background-color: #24305e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  color: #f2f2f2;
+  margin: 0;
+}
+
+button {
+  background-color: #57ba98;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-weight: bold;
+  color: #24305e;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
+}
+
+#modal-btn {
+  background-color: #f76c6c;
+  color: #fff;
+}
+
+#libraryDisplay {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #24305e;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  min-height: 250px;
+  transition: transform 0.2s ease;
+}
+
+.book-card:hover {
+  transform: scale(1.02);
+}
+
+#book-dialog {
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+  color: #24305e;
+}
+
+#book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+#book-form h2 {
+  margin-top: 0;
+  color: #24305e;
+}
+
+#book-form label {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: #24305e;
+}
+
+#book-form input[type="text"],
+#book-form input[type="number"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #24305e;
+  width: 60%;
+}
+
+#book-form input[type="checkbox"] {
+  transform: scale(1.2);
+}
+
+.remove-btn {
+  background-color: #f76c6c;
+  color: #fff;
+}
+
+.read-btn {
+  background-color: #57ba98;
+  color: #24305e;
+}
