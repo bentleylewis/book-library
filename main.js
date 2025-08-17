@@ -35,14 +35,15 @@ bookForm.addEventListener("submit", (event) => {
 });
 
 
-function Book(title, author, pages, readBefore) {
+class Book {
+    constructor(title, author, pages, readBefore) {
     this.title = title;
     this.author = author;
     this.pages = pages;
     this.readBefore = readBefore;
     this.id = crypto.randomUUID();
-
-    Book.prototype.toggleRead = function () {
+    }
+    toggleRead () {
         this.readBefore = !this.readBefore;
     };
 }
